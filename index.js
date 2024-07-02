@@ -6,7 +6,7 @@ Student ID : N01552355
 require("dotenv").config();
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8000;
 const path = require("path");
 const fs = require("fs");
 const multer = require("multer");
@@ -38,7 +38,7 @@ app.use(express.static(path.join(__dirname, "views")));
 
 // Root route
 app.get('/', (req, res) => {
-  res.send('Welcome to Assignment 2');
+  res.send('Welcome to Humber ITS');
 });
 
 // Single file upload route
